@@ -80,3 +80,14 @@ $kbd-box-shadow: inset 0 -.1rem 0 rgba($black,
 $nested-kbd-font-weight: $font-weight-bold;
 $list-inline-padding: .5rem;
 $mark-bg: #fcf8e3;
+//
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}

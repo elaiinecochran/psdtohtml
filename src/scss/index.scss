@@ -1,7 +1,12 @@
 //Common
 @import 'common/variables';
 @import 'common/typography';
+@import 'common/global';
 //Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
+//
 //Components
 @import 'components/navbars';
+//
+//Pages
+@import 'pages/home';
