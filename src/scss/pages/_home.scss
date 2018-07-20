@@ -5,3 +5,12 @@
         padding: 20% 0;
     }
 }
+
+.team {
+    .card-text {
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+        font-size: $font-size-xs;
+        letter-spacing: 4px;
+    }
+}
