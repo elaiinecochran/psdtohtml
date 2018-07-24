@@ -56,6 +56,8 @@ $overlay-light: rgba(255, 255, 255, 0.5);
 // stylelint-disable value-keyword-case
 // font families
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Open+Sans:300,400,600,700,800');
+@import '/public/vendors/et-line-font/style.css';
+$font-family-icon: 'et-line';
 $font-family-primary: 'Open Sans',
 sans-serif;
 $font-family-secondary: 'Dosis',
