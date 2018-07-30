@@ -33,8 +33,9 @@ $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
 $gray: #cfcfcf;
+$gray-dark: $gray-500;
 $colors: ();
-$colors: map-merge(( "blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "white": $white, "gray": $gray, "gray-dark": $gray-800), $colors);
+$colors: map-merge(( "blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "white": $white, "gray": $gray, "gray-dark": $gray-500), $colors);
 // theme colors
 $primary: $black;
 $secondary: $gray-600;
@@ -45,7 +46,7 @@ $danger: $red;
 $light: $gray-100;
 $dark: $dark;
 $theme-colors: ();
-$theme-colors: map-merge(( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "gray": $gray, "dark": $dark), $theme-colors);
+$theme-colors: map-merge(( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "gray": $gray, "gray-dark": $gray-dark, "dark": $dark), $theme-colors);
 // overlay
 $overlay-dark: rgba(0, 0, 0, 0.5);
 $overlay-light: rgba(255, 255, 255, 0.5);
