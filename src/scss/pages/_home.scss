@@ -14,3 +14,26 @@
         letter-spacing: 4px;
     }
 }
+
+#services-nav-tab {
+    .nav-item {
+        border: none;
+    }
+    .nav-link {
+        color: $gray-dark;
+        &:hover {
+            color: $dark;
+        }
+    }
+    i {
+        font-size: 3rem;
+        padding: 1rem 2rem;
+    }
+    .active {
+        color: $dark;
+    }
+}
+
+.nav-tabs {
+    border: none;
+}
