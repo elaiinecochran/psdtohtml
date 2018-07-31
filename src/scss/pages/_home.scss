@@ -43,3 +43,16 @@
 .nav-tabs {
     border: none;
 }
+
+// Section: banner with iMac
+.imac {
+    max-width: 100%;
+    height: auto;
+    margin-top: -80px;
+}
+
+#banner-with-imac {
+    p {
+        font-size: $font-size-sm;
+    }
+}
