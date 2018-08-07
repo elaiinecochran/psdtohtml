@@ -1,13 +1,17 @@
-// Common
+// Variables
 @import 'common/variables';
-@import 'common/typography';
-@import 'common/global';
 
 // Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
+// Common
+@import 'common/typography';
+@import 'common/global';
+
 // Components
 @import 'components/navbars';
+@import 'components/cards';
+@import 'components/buttons';
 
 // Pages
 @import 'pages/home'

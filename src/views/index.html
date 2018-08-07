@@ -11,57 +11,543 @@
     </head>
 
     <body>
-        <header class="main-header">
+        <!-- Section Header -->
+        <header class="main-header" id="header">
             <div class="overlay-dark">
                 <div class="container-fluid px-0">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-nav">
-                    <a class="navbar-brand ml-5" href="#">
-                        <img src="/public/images/Logo.png" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto mr-5">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Works</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Content</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" id="main-nav">
+                        <a class="navbar-brand ml-5" href="#">
+                            <img src="/public/images/Logo.png">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto mr-5">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#header">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Works</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Content</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-            <!-- /.container-fluid -->
+                <!-- /.container-fluid -->
 
-            <!-- Hero -->
-            <div class="container">
-                <div class="row text-center align-content-center">
-                    <div class="col-12 hero-content">
-                        <h3 class="display-3 text-white">Hello World!</h3>
-                        <p class="text-white mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, molestiae?</p>
-                        <p><a href="" class="btn btn-gray mt-3">Learn More</a> <!-- /.btn btn-primary --></p>
+                <!-- Section Hero -->
+                <div class="container">
+                    <div class="row text-center align-content-center">
+                        <div class="col-12 hero-content">
+                            <h3 class="display-3 text-white">Hello World!</h3>
+                            <p class="text-white mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, molestiae?</p>
+                            <p>
+                                <a href="" class="btn btn-gray mt-3">Learn More</a>
+                                <!-- /.btn btn-primary -->
+                            </p>
+                        </div>
+                        <!-- /.col-12 -->
                     </div>
-                    <!-- /.col-12 -->
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+
+            </div>
+        </header>
+
+        <!-- Section About -->
+        <section id="about">
+            <div class="container py-5">
+                <h4>About Studio</h4>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <blockquote>
+                            <p>Design is not making beauty, beauty emerges from selection, affinities, integration, love.</p>
+                            <cite>Louis Kahn</cite>
+                        </blockquote>
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sed a quas voluptate iste placeat mollitia laboriosam. Quia harum veritatis quod minima rerum maxime expedita sequi, optio nostrum reiciendis delectus.</p>
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolore optio obcaecati reiciendis molestias beatae odio debitis eligendi cupiditate voluptas, consequuntur corporis et quibusdam quidem neque nisi velit harum non.</p>
+                    </div>
+                    <!-- /.col-md-4 -->
+                </div>
+                <!-- /.row -->
+                <div class="card-deck team mt-5">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="http://loremflickr.com/g/370/450/abstract/">
+                        <div class="card-body">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="http://loremflickr.com/g/370/450/city/">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Doe</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="http://loremflickr.com/g/370/450/animals/">
+                        <div class="card-body">
+                            <h5 class="card-title">James Doe</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                    </div>
                 </div>
                 <!-- /.row -->
             </div>
             <!-- /.container -->
+        </section>
+        <!-- /#about -->
 
-        </div>
-        </header>
+        <hr>
+
+        <!-- Section Services -->
+        <section id="services">
+            <div class="container">
+                <h5 class="text-center py-5">Services</h5>
+
+                <nav>
+
+                    <div class="nav nav-tabs justify-content-between" id="services-nav-tab" role="tablist">
+
+                        <a class="nav-item nav-link text-center active" id="nav-branding-tab" data-toggle="tab" href="#nav-branding" role="tab" aria-controls="nav-branding" aria-selected="true">
+                            <i class="icon-strategy pb-3"></i>
+                            <h5>Branding</h5>
+                        </a>
+
+                        <a class="nav-item nav-link text-center" id="nav-web-design-tab" data-toggle="tab" href="#nav-web-design" role="tab" aria-controls="nav-web-design" aria-selected="false">
+                            <i class="icon-desktop pb-3"></i>
+                            <h5>Web Design</h5>
+                        </a>
+
+                        <a class="nav-item nav-link text-center" id="nav-graphic-design-tab" data-toggle="tab" href="#nav-graphic-design" role="tab" aria-controls="nav-graphic-design" aria-selected="false">
+                            <i class="icon-tools pb-3"></i>
+                            <h5>Graphic Design</h5>
+                        </a>
+
+                        <a class="nav-item nav-link text-center" id="nav-development-tab" data-toggle="tab" href="#nav-development" role="tab" aria-controls="nav-development" aria-selected="false">
+                            <i class="icon-gears pb-3"></i>
+                            <h5>Development</h5>
+                        </a>
+
+                        <a class="nav-item nav-link text-center" id="nav-photography-tab" data-toggle="tab" href="#nav-photography" role="tab" aria-controls="nav-photography" aria-selected="false">
+                            <i class="icon-camera pb-3"></i>
+                            <h5>Photography</h5>
+                        </a>
+
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-branding" role="tabpanel" aria-labelledby="nav-branding-tab">
+                        <div class="row mt-3">
+
+                            <div class="col-md-4">
+                                <blockquote>
+
+                                    <p>A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.</p>
+                                    <cite>Jeff Bezos</cite>
+                                </blockquote>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sed a quas voluptate iste placeat mollitia laboriosam. Quia harum veritatis quod minima rerum maxime expedita sequi, optio nostrum reiciendis delectus.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolore optio obcaecati reiciendis molestias beatae odio debitis eligendi cupiditate voluptas, consequuntur corporis et quibusdam quidem neque nisi velit harum non.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <div class="tab-pane fade" id="nav-web-design" role="tabpanel" aria-labelledby="nav-web-design-tab">
+
+                        <div class="row mt-3">
+
+                            <div class="col-md-4">
+                                <blockquote>
+
+                                    <p>A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.</p>
+                                    <cite>John Doe</cite>
+                                </blockquote>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sed a quas voluptate iste placeat mollitia laboriosam. Quia harum veritatis quod minima rerum maxime expedita sequi, optio nostrum reiciendis delectus.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolore optio obcaecati reiciendis molestias beatae odio debitis eligendi cupiditate voluptas, consequuntur corporis et quibusdam quidem neque nisi velit harum non.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-graphic-design" role="tabpanel" aria-labelledby="nav-graphic-design-tab">
+
+                        <div class="row mt-3">
+
+                            <div class="col-md-4">
+                                <blockquote>
+
+                                    <p>A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.</p>
+                                    <cite>Jane Doe</cite>
+                                </blockquote>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sed a quas voluptate iste placeat mollitia laboriosam. Quia harum veritatis quod minima rerum maxime expedita sequi, optio nostrum reiciendis delectus.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolore optio obcaecati reiciendis molestias beatae odio debitis eligendi cupiditate voluptas, consequuntur corporis et quibusdam quidem neque nisi velit harum non.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-development" role="tabpanel" aria-labelledby="nav-development-tab">
+
+                        <div class="row mt-3">
+
+                            <div class="col-md-4">
+                                <blockquote>
+
+                                    <p>A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.</p>
+                                    <cite>Edward Doe</cite>
+                                </blockquote>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sed a quas voluptate iste placeat mollitia laboriosam. Quia harum veritatis quod minima rerum maxime expedita sequi, optio nostrum reiciendis delectus.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolore optio obcaecati reiciendis molestias beatae odio debitis eligendi cupiditate voluptas, consequuntur corporis et quibusdam quidem neque nisi velit harum non.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-photography" role="tabpanel" aria-labelledby="nav-photography-tab">
+
+                        <div class="row mt-3">
+
+                            <div class="col-md-4">
+                                <blockquote>
+
+                                    <p>A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.</p>
+                                    <cite>Noah Pinson</cite>
+                                </blockquote>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sed a quas voluptate iste placeat mollitia laboriosam. Quia harum veritatis quod minima rerum maxime expedita sequi, optio nostrum reiciendis delectus.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolore optio obcaecati reiciendis molestias beatae odio debitis eligendi cupiditate voluptas, consequuntur corporis et quibusdam quidem neque nisi velit harum non.</p>
+
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#services -->
+
+        <br>
+
+        <!-- Section banner with iMac -->
+
+        <section class="banner-with-imac" class="my-5">
+            <div class="container-fluid bg-dark py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 align-self-center">
+                            <h5 class="text-white">Looking for exclusive digital services?</h5>
+                            <p class="text-gray my-3">Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Integer non dapibus diam, ac eleifend lectus.</p>
+                            <a href="#" class="btn btn-light letsTalk">Let's Talk</a>
+
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6 text-center">
+                            <img class="iMac" src="/public/images/iMac.png">
+                        </div>
+                        <!-- /.col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.container-fluid bg-dark -->
+        </section>
+        <!-- /.banner-with-imac -->
+
+        <br>
+
+        <!-- Section Portfolio -->
+        <section id="portfolio">
+        <div class="container-fluid">
+            <div>
+                <h5 class="text-center py-5">Portfolio</h5>
+                <p class="text-center pb-5">In auctor ex id urna faucibus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</p>
+            </div>
+
+            <nav>
+                <div class="nav nav-tabs justify-content-center" id="portfolio-nav-tab" role="tablist">
+
+                    <a class="nav-item nav-link active" id="nav-all-works-tab" data-toggle="tab" href="#nav-all-works" role="tab" aria-controls="nav-all-works" aria-selected="true">
+                        <h5 class="mb-1">All Works</h5>
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-branding2-tab" data-toggle="tab" href="#nav-branding2" role="tab" aria-controls="nav-branding2" aria-selected="false">
+                        <h5 class="mb-1">Branding</h5>
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-design-tab" data-toggle="tab" href="#nav-design" role="tab" aria-controls="nav-design" aria-selected="false">
+                        <h5 class="mb-1">Design</h5>
+                    </a>
+
+                    <a class="nav-item nav-link" id="nav-photography2-tab" data-toggle="tab" href="#nav-photography2" role="tab" aria-controls="nav-photography2" aria-selected="false">
+                        <h5 class="mb-1">Photography</h5>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-all-works" role="tabpanel" aria-labelledby="nav-all-works-tab">
+                        <div class="card-deck team mt-5">
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                                </div>
+
+                        </div>
+
+                        <div class="card-deck team mt-2">
+
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                            </div>
+
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                            </div>
+
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                            </div>
+
+                        </div>
+                    </div>         
+
+                    <div class="tab-pane fade" id="nav-branding2" role="tabpanel" aria-labelledby="nav-branding2-tab">
+
+                        <div class="card-deck team mt-5">
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/animals/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/animals/">
+                        
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="card-deck team mt-2">
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/animals/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/animals/">
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-design" role="tabpanel" aria-labelledby="nav-design-tab">
+
+                        <div class="card-deck team mt-5">
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                        
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="card-deck team mt-2">
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-photography2" role="tabpanel" aria-labelledby="nav-photography2-tab">
+
+                        <div class="card-deck team mt-5">
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/animals/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                        
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="card-deck team mt-2">
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/city/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/abstract/">
+                        
+                            </div>
+                        
+                            <div class="card text-center ml-0 mr-2">
+                                <img class="card-img-top" src="http://loremflickr.com/g/650/500/animals/">
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
     </body>
 
 </html>

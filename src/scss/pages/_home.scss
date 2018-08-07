@@ -6,3 +6,71 @@
     padding: 20% 0;
   }
 }
+
+.team {
+  .card-text {
+    text-transform: uppercase;
+    font-weight: $font-weight-light;
+    font-size: 0.7rem;
+  }
+}
+
+// Services
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+#services-nav-tab {
+  .nav-link {
+    color: $gray-dark;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+
+  i {
+    font-size: 4rem;
+    padding: 1rem 2rem;
+  }
+
+  .active {
+    color: $dark;
+  }
+
+}
+
+// Section banner with Imac
+.iMac {
+  width: 100%;
+  height: auto;
+  margin-top: -80px;
+}
+
+#banner-with-imac {
+  p {
+    font-size: $font-size-sm;
+  }
+}
+
+.letsTalk {
+    width: 165px;
+    border-radius: 1%;
+}
+
+// Section Portfolio
+#portfolio-nav-tab {
+    .nav-link {
+        color: $gray-dark;
+        border: none;
+        &:hover {
+            color: $dark;
+        }
+    }
+
+    .active {
+        color: $dark;
+    }
+    
+}
