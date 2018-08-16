@@ -37,3 +37,36 @@
 .nav-tabs {
     border: none;
 }
+
+.imac {
+    max-width: 90%;
+    height: auto;
+    margin-top: -80px;
+}
+
+.banner-with-imac {
+    p {
+        font-size: $font-size-xs;
+    }
+}
+
+#portfolio {
+    img {
+        padding: 5px;
+    }
+}
+
+#portfolio-nav-tab {
+    .nav-item {
+        border: none;
+    }
+    .nav-link {
+        color: $gray-dark;
+        &:hover {
+            color: $dark;
+        }
+    }
+    .active {
+        color: $dark;
+    }
+}
