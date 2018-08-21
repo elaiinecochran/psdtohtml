@@ -1,23 +1,32 @@
-// headings
-h1, h2, h3, h4 {
-  text-transform: uppercase;
+// Headings
+h1,
+h2,
+h3,
+h4
+    {
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
-h5 {
-  font-size: $font-size-base;
-  font-weight: $font-weight-light;
-  text-transform: uppercase;
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: $font-weight-light;
+    letter-spacing: 3px;
 }
 
+//
+// Blockquote
 blockquote {
-  font-size: $font-size-lg;
-  font-weight: $font-weight-light;
-
-  cite {
-    font-size: $font-size-sm;
-    &::before {
-      content: '—';
-      padding-right: 0.8rem;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-light;
+    cite {
+        &::before {
+            content: '—';
+            padding-right: 0.2rem;
+        }
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        letter-spacing: 5px;
     }
-  }
 }
