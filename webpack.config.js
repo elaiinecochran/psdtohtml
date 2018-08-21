@@ -23,30 +23,31 @@ const config = {
             },
             {
                 test: /\.scss$/,
-                use: IS_DEV ?
-                    [
-                        'style-loader',
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                sourceMap: true,
-                            },
-                        },
-                        {
-                            loader: 'sass-loader',
-                            options: {
-                                sourceMap: true,
-                            },
-                        },
-                    ] :
-                    ExtractTextPlugin.extract({
-                        fallback: 'style-loader',
-                        use: ['css-loader', 'sass-loader'],
-                    }),
+                use: IS_DEV
+                    ? [
+                          'style-loader',
+                          {
+                              loader: 'css-loader',
+                              options: {
+                                  sourceMap: true,
+                              },
+                          },
+                          {
+                              loader: 'sass-loader',
+                              options: {
+                                  sourceMap: true,
+                              },
+                          },
+                      ]
+                    : ExtractTextPlugin.extract({
+                          fallback: 'style-loader',
+                          use: ['css-loader', 'sass-loader'],
+                      }),
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
-                use: [{
+                use: [
+                    {
                         loader: 'url-loader',
                         options: {
                             limit: 8192,
@@ -67,13 +68,15 @@ const config = {
             },
             {
                 test: /\.html$/,
-                use: [{
-                    loader: 'html-loader',
-                    options: {
-                        attrs: [':data-src'],
-                        minimize: true,
+                use: [
+                    {
+                        loader: 'html-loader',
+                        options: {
+                            attrs: [':data-src'],
+                            minimize: true,
+                        },
                     },
-                }, ],
+                ],
             },
         ],
     },

@@ -1,15 +1,19 @@
-// Variables
+//Variables
 @import 'common/variables';
-// Bootstrap
+//
+//Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
-
-// Common
+//
+//Common
 @import 'common/typography';
 @import 'common/global';
-
-// Components
+//
+//Components
 @import 'components/navbars';
 @import 'components/cards';
-
-// Pages
-@import 'pages/home'
+//
+//Layouts
+@import 'layouts/banner';
+//
+//Pages
+@import 'pages/home';

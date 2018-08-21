@@ -1,40 +1,34 @@
 .main-header {
-  background: url(/public/images/header-image.jpg) no-repeat center center;
-  background-size: cover;
-
-  .hero-content {
-    padding: 20% 0;
-  }
+    background: url(/public/images/header-image.jpg) no-repeat center center;
+    background-size: cover;
+    .hero-content {
+        padding: 20% 0;
+    }
 }
 
 .team {
-  .card-text {
-    text-transform: uppercase;
-    font-weight: $font-weight-light;
-    font-size: 0.7rem;
-  }
+    .card-text {
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+        font-size: $font-size-xs;
+        letter-spacing: 4px;
+    }
 }
 
-
-// Section: Services
 #services-nav-tab {
     .nav-item {
         border: none;
     }
-
     .nav-link {
         color: $gray-dark;
-
         &:hover {
             color: $dark;
         }
     }
-
     i {
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 1rem 2rem;
     }
-
     .active {
         color: $dark;
     }
@@ -44,15 +38,35 @@
     border: none;
 }
 
-// Section: banner with iMac
 .imac {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     margin-top: -80px;
 }
 
-#banner-with-imac {
+.banner-with-imac {
     p {
-        font-size: $font-size-sm;
+        font-size: $font-size-xs;
+    }
+}
+
+#portfolio {
+    img {
+        padding: 5px;
+    }
+}
+
+#portfolio-nav-tab {
+    .nav-item {
+        border: none;
+    }
+    .nav-link {
+        color: $gray-dark;
+        &:hover {
+            color: $dark;
+        }
+    }
+    .active {
+        color: $dark;
     }
 }
