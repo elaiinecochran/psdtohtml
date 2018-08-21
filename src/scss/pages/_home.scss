@@ -52,7 +52,7 @@
 
 #portfolio {
     img {
-        padding: 5px;
+        padding-bottom: 10px;
     }
 }
 
@@ -68,5 +68,19 @@
     }
     .active {
         color: $dark;
+    }
+}
+
+#why-us {
+    i {
+        font-size: 3rem;
+    }
+    h6 {
+        margin: 1rem 0;
+    }
+    p {
+        text-align: left;
+        font-size: $font-size-sm;
+        color: $text-muted;
     }
 }
