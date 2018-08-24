@@ -86,19 +86,10 @@
 }
 
 #testimonials {
-    i {
-        font-size: 2rem;
-        padding-bottom: 1rem;
-    }
-    cite {
-        font-size: $font-size-xs;
-    }
-}
-
-#testimonials-slider {
     .carousel-control-prev {
-        top: 35%;
+        top: 30%;
         left: -10px;
+        /* width: 0; */
         height: 0;
         border-top: 60px solid transparent;
         border-bottom: 60px solid transparent;
@@ -108,8 +99,9 @@
         margin-left: -220px;
     }
     .carousel-control-next {
-        top: 35%;
-        right: -10px;
+        top: 30%;
+        right: 0;
+        /* width: 0; */
         height: 0;
         border-top: 60px solid transparent;
         border-bottom: 60px solid transparent;
@@ -119,9 +111,8 @@
         margin-right: -220px;
     }
     .carousel-indicators li {
-        bottom: -30px;
-        width: 7px;
-        height: 7px;
         border-radius: 50%;
+        width: 8px;
+        height: 8px;
     }
 }
