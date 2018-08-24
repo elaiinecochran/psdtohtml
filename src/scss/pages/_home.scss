@@ -95,13 +95,33 @@
     }
 }
 
-#carouselExampleIndicators {
-    .carousel-indicators {
-        bottom: -40px;
-        li {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-        }
+#testimonials-slider {
+    .carousel-control-prev {
+        top: 35%;
+        left: -10px;
+        height: 0;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-left: 60px solid gray;
+    }
+    .carousel-control-prev-icon {
+        margin-left: -220px;
+    }
+    .carousel-control-next {
+        top: 35%;
+        right: -10px;
+        height: 0;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-right: 60px solid gray;
+    }
+    .carousel-control-next-icon {
+        margin-right: -220px;
+    }
+    .carousel-indicators li {
+        bottom: -30px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
     }
 }
