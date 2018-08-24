@@ -86,6 +86,12 @@
 }
 
 #testimonials {
+    i {
+        font-size: 2rem;
+    }
+    cite {
+        font-size: $font-size-xs;
+    }
     .carousel-control-prev {
         top: 30%;
         left: -10px;
@@ -100,7 +106,7 @@
     }
     .carousel-control-next {
         top: 30%;
-        right: 0;
+        right: -10px;
         /* width: 0; */
         height: 0;
         border-top: 60px solid transparent;
@@ -111,8 +117,31 @@
         margin-right: -220px;
     }
     .carousel-indicators li {
+        bottom: -30px;
         border-radius: 50%;
         width: 8px;
         height: 8px;
+    }
+}
+
+#latest-news {
+    .subtitle {
+        font-size: $font-size-xs;
+    }
+}
+
+#contact {
+    .icon-bg {
+        i {
+            font-size: 1rem;
+            color: white;
+            transform: rotate(-45deg);
+            padding: 0.3rem;
+        }
+        width: 40px;
+        height: 40px;
+        background: $dark;
+        transform: rotate(45deg);
+        padding: .5rem;
     }
 }
