@@ -84,3 +84,24 @@
         color: $text-muted;
     }
 }
+
+#testimonials {
+    i {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    cite {
+        font-size: $font-size-xs;
+    }
+}
+
+#carouselExampleIndicators {
+    .carousel-indicators {
+        bottom: -40px;
+        li {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+        }
+    }
+}
