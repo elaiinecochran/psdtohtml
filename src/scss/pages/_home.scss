@@ -84,3 +84,39 @@
         color: $text-muted;
     }
 }
+
+#testimonials {
+    .carousel-control-prev {
+        top: 30%;
+        left: -10px;
+        /* width: 0; */
+        height: 0;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-left: 60px solid gray;
+    }
+
+    .carousel-control-prev-icon {
+        margin-left: -220px;
+    }
+
+    .carousel-control-next {
+        top: 30%;
+        right: 0;
+        /* width: 0; */
+        height: 0;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-right: 60px solid gray;
+    }
+
+    .carousel-control-next-icon {
+        margin-right: -220px;
+    }
+
+    .carousel-indicators li {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+    }
+}
