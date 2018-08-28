@@ -750,6 +750,55 @@
         <!-- /#contact -->
 
         <!-- Section: Map -->
+        <section id="map">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col map-container">
+                        <div class="google-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2665.948883557085!2d-123.13566978442329!3d48.07262956366139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x548fb8af9fda09cb%3A0xf8c9cfde62e45c13!2s250+Marlo+Dr%2C+Sequim%2C+WA+98382!3m2!1d48.072626!2d-123.1334811!5e0!3m2!1sen!2sus!4v1535490702711" class="w-100" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!-- /.google-map -->
+                        <div class="map-toggle text-center">
+                            <div class="map-open">
+                                <div class="icon-bg mt-2">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <!-- /.icon-bg mt-2 -->
+                                <p class="my-2">Open The Map
+                                    <i class="fas fa-arrow-down"></i>
+                                </p>
+                            </div>
+                            <!-- /.map-open -->
+                            <div class="map-close">
+                                <p class="my-2 py-2">Close The Map
+                                    <i class="fas fa-arrow-up"></i>
+                                </p>
+                            </div>
+                            <!-- /.map-close -->
+                        </div>
+                        <!-- /.map-toggle -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#map -->
+
+        <script>
+            document.querySelector('.map-open').addEventListener('click', function (e) {
+                this.style.display = 'none';
+                document.querySelector('.map-toggle').style.background = 'none';
+                document.querySelector('.map-close').style.display = 'block';
+            });
+            document.querySelector('.map-close').addEventListener('click', function (e) {
+                this.style.display = 'none';
+                document.querySelector('.map-open').style.display = 'block';
+                document.querySelector('.map-toggle').style.background = 'rgba(0, 0, 0, 0.8)';
+            })
+
+        </script>
 
     </body>
 
