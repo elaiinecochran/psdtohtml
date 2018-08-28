@@ -188,3 +188,25 @@
         padding: .5rem;
     }
 }
+
+#footer {
+    .icon-bg {
+        margin: 1rem;
+        i {
+            font-size: 1rem;
+            color: $dark;
+            transform: rotate(-45deg);
+            padding: 0.3rem;
+        }
+        width: 40px;
+        height: 40px;
+        background: white;
+        border: 1px solid $dark;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        padding: .5rem;
+    }
+    .up-arrow {
+        font-size: 3rem;
+    }
+}
