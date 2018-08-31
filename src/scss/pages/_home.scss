@@ -27,16 +27,18 @@
 
     &:hover {
       color: $dark;
+      border: none;
     }
   }
 
   i {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 1rem 2rem;
   }
 
   .active {
     color: $dark;
+    border: none;
   }
 
 }
@@ -73,4 +75,161 @@
         color: $dark;
     }
     
+}
+
+#why-us {
+  i {
+    margin: 0 auto;
+    font-size: 4rem;
+  }
+
+  h3 {
+    margin: 2rem 0;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+#like-our-works {
+  a {
+    width: 200px;
+    border-radius: 2px;
+  }
+}
+
+#testimonials {
+  .carousel-control-prev {
+    top: 30%;
+    left: -15px;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid gray;
+  }
+
+  .carousel-control-prev-icon {
+    margin-left: -220px;
+  }
+
+  .carousel-control-next {
+      top: 30%;
+      right: -15px;
+      height: 0;
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-right: 60px solid gray;
+  }
+
+  .carousel-control-next-icon {
+      margin-right: -220px;
+  }
+
+  .carousel-indicators li {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+#news {
+  .card-body {
+    border: none;
+  }
+
+  a {
+    width: 150px;
+    border-radius: 2px; 
+  }
+}
+
+#newsletter {
+  button {
+    border-radius: 2px;
+  }
+}
+
+#contact {
+  .icon-bg {
+    i {
+      font-size: 1rem;
+      color: white;
+      transform: rotate(-45deg);
+      padding: 0.3rem;
+    }
+    width: 40px;
+    height: 40px;
+    background: $dark;
+    padding: .5rem;
+    transform: rotate(45deg);
+  }
+}
+
+#map {
+  .map-container {
+    position: relative;
+  }
+
+  .map-toggle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $light;
+    transition: all, ease, 2s;
+    .map-open {
+      margin-top: 13%;
+      transition: all, ease, 2s;
+    }
+
+    .map-close {
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      padding: .5rem 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      transition: all, ease, 2s;
+    }
+  }
+
+  .icon-bg {
+    margin: 15% auto 0;
+      i {
+          font-size: 1rem;
+          color: $dark;
+          transform: rotate(-45deg);
+          padding: 0.3rem;
+      }
+      width: 40px;
+      height: 40px;
+      background: $white;
+      padding: .5rem;
+      transform: rotate(45deg);
+  }
+}
+
+#footer {
+  .icon-bg {
+      i {
+          font-size: 1rem;
+          color: $dark;
+          transform: rotate(-45deg);
+          padding: 0.3rem;
+      }
+      width: 30px;
+      height: 30px;
+      background: white;
+      padding: 0.1rem;
+      transform: rotate(45deg);
+      border: $dark 1px solid;
+  }
+
+  .up-arrow {
+    font-size: 3rem;
+  }
 }
