@@ -158,11 +158,10 @@
         top: 0;
         left: 0;
         color: $light;
-        transition: all, ease, 2s;
-
+        transition: all ease .5s;
         .map-open {
-            margin-top: 15%;
-            transition: all, ease, 2s;
+            margin-top: 13%;
+            transition: all ease .5s;
         }
         .map-close {
             background: rgba(0, 0, 0, 0.8);
@@ -171,7 +170,7 @@
             bottom: 0;
             width: 100%;
             left: 0;
-            transition: all, ease, 2s;
+            transition: all ease .5s;
         }
     }
     .icon-bg {
@@ -184,8 +183,30 @@
         }
         width: 40px;
         height: 40px;
-        background: $white;
+        background: $light;
         transform: rotate(45deg);
         padding: .5rem;
+    }
+}
+
+#footer {
+    .icon-bg {
+        margin: 1rem;
+        i {
+            font-size: 1rem;
+            color: $dark;
+            transform: rotate(-45deg);
+            padding: 0.3rem;
+        }
+        width: 40px;
+        height: 40px;
+        background: white;
+        border: 1px solid $dark;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        padding: .5rem;
+    }
+    .up-arrow {
+        font-size: 3rem;
     }
 }
