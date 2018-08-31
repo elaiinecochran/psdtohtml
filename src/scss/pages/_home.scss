@@ -1,8 +1,22 @@
 .main-header {
     background: url(/public/images/header-image.jpg) no-repeat center center;
     background-size: cover;
+
     .hero-content {
         padding: 20% 0;
+
+        h4 {
+            @include media-breakpoint-down(sm) {
+                font-size: 1.4rem;
+                margin-top: 2rem;
+            }
+        }
+
+        p {
+            @include media-breakpoint-down(sm) {
+                padding: 0 2rem;
+            }
+        }
     }
 }
 
@@ -19,18 +33,36 @@
     .nav-item {
         border: none;
     }
+
     .nav-link {
         color: $gray-dark;
+
         &:hover {
             color: $dark;
         }
     }
+
     i {
         font-size: 3rem;
         padding: 1rem 2rem;
     }
+
     .active {
         color: $dark;
+    }
+
+    @include media-breakpoint-down(sm) {
+        i {
+            font-size: 1rem;
+        }
+
+        h6 {
+            font-size: 0.5rem;
+        }
+
+        .nav-link {
+            padding: 0.2rem;
+        }
     }
 }
 
@@ -42,6 +74,10 @@
     max-width: 90%;
     height: auto;
     margin-top: -80px;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
 }
 
 .banner-with-imac {
@@ -53,6 +89,8 @@
 #portfolio {
     img {
         padding-bottom: 10px;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -60,12 +98,15 @@
     .nav-item {
         border: none;
     }
+
     .nav-link {
         color: $gray-dark;
+
         &:hover {
             color: $dark;
         }
     }
+
     .active {
         color: $dark;
     }
@@ -75,9 +116,11 @@
     i {
         font-size: 3rem;
     }
+
     h6 {
         margin: 1rem 0;
     }
+
     p {
         text-align: left;
         font-size: $font-size-sm;
@@ -89,38 +132,79 @@
     i {
         font-size: 2rem;
     }
+
     cite {
         font-size: $font-size-xs;
     }
+
     .carousel-control-prev {
-        top: 30%;
-        left: -10px;
+        margin-top: 100px;
+        margin-left: -20px;
         /* width: 0; */
         height: 0;
         border-top: 60px solid transparent;
         border-bottom: 60px solid transparent;
         border-left: 60px solid gray;
     }
+
     .carousel-control-prev-icon {
         margin-left: -220px;
+
+        @include media-breakpoint-down(lg) {
+            margin-left: -170px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-left: -120px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-left: -80px;
+        }
     }
+
     .carousel-control-next {
-        top: 30%;
-        right: -10px;
+        margin-top: 100px;
+        margin-right: -20px;
         /* width: 0; */
         height: 0;
         border-top: 60px solid transparent;
         border-bottom: 60px solid transparent;
         border-right: 60px solid gray;
     }
+
     .carousel-control-next-icon {
         margin-right: -220px;
+
+        @include media-breakpoint-down(lg) {
+            margin-right: -170px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-right: -120px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-right: -80px;
+        }
     }
+
     .carousel-indicators li {
         bottom: -30px;
         border-radius: 50%;
         width: 8px;
         height: 8px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        blockquote {
+            font-size: 0.9rem;
+            padding: 1rem 2rem;
+        }
+
+        cite {
+            margin-top: 2rem;
+        }
     }
 }
 
@@ -138,6 +222,7 @@
             transform: rotate(-45deg);
             padding: 0.3rem;
         }
+
         width: 40px;
         height: 40px;
         background: $dark;
@@ -150,6 +235,7 @@
     .map-container {
         position: relative;
     }
+
     .map-toggle {
         position: absolute;
         width: 100%;
@@ -159,28 +245,37 @@
         left: 0;
         color: $light;
         transition: all ease .5s;
+
         .map-open {
             margin-top: 13%;
             transition: all ease .5s;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 40%;
+            }
         }
+
         .map-close {
             background: rgba(0, 0, 0, 0.8);
             display: none;
             position: absolute;
-            bottom: 0;
+            bottom: -60px;
             width: 100%;
             left: 0;
             transition: all ease .5s;
         }
     }
+
     .icon-bg {
         margin: 0 auto;
+
         i {
             font-size: 1rem;
             color: $dark;
             transform: rotate(-45deg);
             padding: 0.3rem;
         }
+
         width: 40px;
         height: 40px;
         background: $light;
@@ -192,12 +287,14 @@
 #footer {
     .icon-bg {
         margin: 1rem;
+
         i {
             font-size: 1rem;
             color: $dark;
             transform: rotate(-45deg);
             padding: 0.3rem;
         }
+
         width: 40px;
         height: 40px;
         background: white;
@@ -206,6 +303,7 @@
         transform: rotate(45deg);
         padding: .5rem;
     }
+
     .up-arrow {
         font-size: 3rem;
     }
