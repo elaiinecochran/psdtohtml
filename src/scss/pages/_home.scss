@@ -78,6 +78,16 @@
     @include media-breakpoint-down(md) {
         display: none;
     }
+
+    @media (max-width: 991.98px) {
+        display: inline-block;
+        margin-top: 0px;
+        max-width: 110%;
+    }
+
+    @media (max-width: 767.98px) {
+        display: none;
+    }
 }
 
 .banner-with-imac {
@@ -228,6 +238,13 @@
         background: $dark;
         transform: rotate(45deg);
         padding: .5rem;
+    }
+}
+
+.contact-text {
+    @media (max-width: 991.98px) {
+        padding-left: 2rem;
+        font-size: $font-size-sm;
     }
 }
 
